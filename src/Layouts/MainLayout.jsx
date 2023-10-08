@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="px-10">
             <Outlet></Outlet>
         </div>
     );
