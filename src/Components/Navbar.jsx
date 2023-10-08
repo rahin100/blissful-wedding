@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="/src/assets/accoung-img.jpg" />
+                <img src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg" />
               </div>
             </label>
             <ul

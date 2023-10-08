@@ -41,7 +41,7 @@ const AboutUs = () => {
         <div className="w-[50%]">
           <img
             className="shadow-2xl rounded-2xl h-[65vh]"
-            src="/src/assets/aboutus.jpg"
+            src="https://i.ibb.co/ThBDF5G/aboutus.jpg"
             alt=""
           />
         </div>

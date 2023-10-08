@@ -42,7 +42,7 @@ const Banner = () => {
             <h1 className="text-white text-8xl font-extrabold">Celebration.</h1>
           </div>
           <img
-            src="/src/assets/bg-2.jpg"
+            src="https://i.ibb.co/7JLWH0G/bg-2.jpg"
             className="w-full h-[100vh]"
             alt="Slide 2"
           />
@@ -66,7 +66,7 @@ const Banner = () => {
             </h1>
           </div>
           <img
-            src="/src/assets/bg-3.jpg"
+            src="https://i.ibb.co/mq3Xj1Z/bg-3.jpg"
             className="w-full h-[100vh]"
             alt="Slide 3"
           />
@@ -90,7 +90,7 @@ const Banner = () => {
             </h1>
           </div>
           <img
-            src="/src/assets/bg-1.jpg"
+            src="https://i.ibb.co/ZWkP8cY/bg-1.jpg"
             className="w-full h-[100vh]"
             alt="Slide 4"
           />

@@ -1,0 +1,61 @@
+[
+    {
+      "id": 1,
+      "name": "Elegant Wedding Venue",
+      "image": "https://i.ibb.co/RBJyZfG/elegantvenue.jpg",
+      "price": "$5,000",
+      "short_description": " Discover the perfect backdrop for your dream wedding in our opulent ballroom. With timeless charm and luxurious details, it's the ideal setting for your unforgettable celebration.",
+      "button_text": "Book Now"
+    },
+    {
+      "id": 2,
+      "name": "Floral Arrangements",
+      "image": "https://i.ibb.co/jW5gVjH/floral.jpg",
+      "price": "$1,200",
+      "short_description": "Elevate your wedding ambiance with our exquisite floral designs. From elegant bouquets to enchanting centerpieces, our creations will infuse romance and beauty into your special day.",
+      "button_text": "Book Now"
+    },
+    {
+      "id": 3,
+      "name": "Catering Services",
+      "image": "https://i.ibb.co/GHWfByQ/catering.jpg",
+      "price": "$4,500",
+      "short_description": "Indulge your guests with exquisite cuisine that's as memorable as your love story. Our gourmet menus will elevate your wedding day, leaving a lasting impression on everyone's taste buds.",
+      "button_text": "Book Now"
+    },
+    {
+      "id": 4,
+      "name": "Photography Package",
+      "image": "https://i.ibb.co/KxQYKqT/photographyjpg.jpg",
+      "price": "$3,000",
+      "short_description": "Capture every beautiful moment of your special day with our expert photographers. From candid shots to stunning portraits, we'll create a timeless visual story that you'll cherish forever.",
+      "button_text": "Book Now"
+    },
+    {
+      "id": 5,
+      "name": "Live Entertainment",
+      "image": "https://i.ibb.co/KzpQFrd/liveentertainment.jpg",
+      "price": "$2,500",
+      "short_description": "Add a touch of magic to your wedding day with our talented performers. From live bands to enchanting acts, we'll create unforgettable moments for you and your guests.",
+      "button_text": "Book Now"
+    },
+    {
+      "id": 6,
+      "name": "Bridal Cortege",
+      "image": "https://i.ibb.co/QYy01jV/bridalcortege.jpg",
+      "price": "$4,800",
+      "short_description": "We can provide you with the most spectacular wedding escort that includes vehicles of different types: sedans, limousines and much more.",
+      "button_text": "Book Now"
+    }
+  ]
+  
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  

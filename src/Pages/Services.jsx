@@ -1,9 +1,14 @@
 
+import Navbar from "../Components/Navbar";
+
 
 const Services = () => {
     return (
         <div>
-            Services
+            <div className="bg-black">
+            <Navbar/>
+            </div>
+
         </div>
     );
 };
