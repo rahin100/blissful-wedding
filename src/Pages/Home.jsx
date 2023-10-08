@@ -6,6 +6,9 @@ import "./CSS/App.css";
 
 import OurServices from "../Components/OurServices";
 import ServicesCard from "../Components/ServicesCard";
+import GetInTouch from "../Components/GetInTouch";
+import Footer from "../Components/Footer";
+
 
 const Home = () => {
   const weddingEvents = useLoaderData();
@@ -21,6 +24,7 @@ const Home = () => {
       <div className="aboutUs-container">
         <AboutUs />
       </div>
+
       <div className="ourServices-container">
         <OurServices></OurServices>
         <div className="grid grid-cols-3 gap-10 shadow-xl">
@@ -32,6 +36,20 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <div className="getInTouch-container">
+         <GetInTouch/>
+      </div>
+
+      <div className="footer-container">
+        <Footer></Footer>
+      </div>
+
+
+
+        
+
+
     </div>
   );
 };
