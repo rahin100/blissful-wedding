@@ -24,6 +24,9 @@ const Navbar = () => {
         <Link to={"/blog"}>Blog</Link>
       </li>
       <li className="text-[18px] font-semibold text-white">
+        <Link to={"/gallery"}>Gallery</Link>
+      </li>
+      <li className="text-[18px] font-semibold text-white">
         <Link to={"/login"}>Login</Link>
       </li>
     </>

@@ -8,6 +8,7 @@ import Testimonials from "../Pages/Testimonials";
 import Registration from "../Pages/Registration";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
+import Gallery from "../Pages/Gallery";
 
 const routes = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery/>,
       },
       {
         path: "/login",
