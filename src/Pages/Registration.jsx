@@ -10,6 +10,7 @@ const Registration = () => {
   
 
   const handleRegister = (e) => {
+    
     e.preventDefault();
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
@@ -31,6 +32,8 @@ const Registration = () => {
         createUser(email, password)
           .then((result) => {
             console.log(result.user);
+            e.currentTarget.reset()
+            
 
           })
           .catch((error) => {

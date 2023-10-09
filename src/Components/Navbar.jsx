@@ -6,58 +6,42 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleSignOut = () => {
-    logOut()
-      .then()
-      .catch();
+    logOut().then().catch();
   };
 
   const navLink = (
     <>
       <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/"}
-          activeClassName="text-primary-600" 
-        >
+        <NavLink to={"/"} activeClassName="text-primary-600">
           Home
         </NavLink>
       </li>
       <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/team"}
-          activeClassName="text-primary-600"
-        >
+        <NavLink to={"/team"} activeClassName="text-primary-600">
           Team
         </NavLink>
       </li>
       <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/testimonials"}
-          activeClassName="text-primary-600"
-        >
+        <NavLink to={"/testimonials"} activeClassName="text-primary-600">
           Testimonials
         </NavLink>
       </li>
+      {user && (
+        <>
+          <li className="text-[18px] font-semibold">
+            <NavLink to={"/blog"} activeClassName="text-primary-600">
+              Blog
+            </NavLink>
+          </li>
+          <li className="text-[18px] font-semibold">
+            <NavLink to={"/gallery"} activeClassName="text-primary-600">
+              Gallery
+            </NavLink>
+          </li>
+        </>
+      )}
       <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/blog"}
-          activeClassName="text-primary-600"
-        >
-          Blog
-        </NavLink>
-      </li>
-      <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/gallery"}
-          activeClassName="text-primary-600"
-        >
-          Gallery
-        </NavLink>
-      </li>
-      <li className="text-[18px] font-semibold">
-        <NavLink
-          to={"/login"}
-          activeClassName="text-primary-600"
-        >
+        <NavLink to={"/login"} activeClassName="text-primary-600">
           Login
         </NavLink>
       </li>
@@ -105,7 +89,10 @@ const Navbar = () => {
           <div className="dropdown flex justify-center items-center">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg" alt="User Avatar" />
+                <img
+                  src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg"
+                  alt="User Avatar"
+                />
               </div>
             </label>
             {user ? (

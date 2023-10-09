@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useContext, useState } from "react";
@@ -8,7 +8,7 @@ const Login = () => {
   const [error, setError] = useState(""); 
 
   const { signIn, googleLogin } = useContext(AuthContext);
-  const location = useLocation();
+  // const location = useLocation();
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -22,7 +22,8 @@ const Login = () => {
       signIn(email, password)
         .then((result) => {
           console.log(result.user);
-          navigate(location?.state ? location.state : "/");
+          e.currentTarget.reset()
+          navigate("/");
         })
         .catch((err) => {
           setError(err.message);

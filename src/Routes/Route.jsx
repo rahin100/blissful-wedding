@@ -33,11 +33,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog></Blog>,
+        element: <PrivateRoute><Blog></Blog></PrivateRoute>,
       },
       {
         path: "/gallery",
-        element: <Gallery/>,
+        element: <PrivateRoute><Gallery/></PrivateRoute>,
       },
       {
         path: "/login",
