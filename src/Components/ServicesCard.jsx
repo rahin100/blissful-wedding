@@ -8,7 +8,9 @@ const ServicesCard = ({ weddingEvent }) => {
     weddingEvent;
 
   return (
-    <div className="relative">
+    <div className="relative" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <div className="static">
         <div>
           <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">

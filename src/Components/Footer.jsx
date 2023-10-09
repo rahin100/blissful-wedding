@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <div className="">
+    <div className="" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
       <footer className="bg-black">
         <div className="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
           <div className="md:flex md:justify-between flex-col lg:flex-row">

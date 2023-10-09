@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="">
+    <div className="" data-aos="zoom-in-left">
       <div className="mt-8 lg:mt-20 ">
         <h2 className="text-4xl lg:text-6xl font-bold mb-5 lg:mb-7">
           About Us

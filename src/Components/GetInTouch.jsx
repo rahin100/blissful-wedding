@@ -1,6 +1,8 @@
 const GetInTouch = () => {
   return (
-    <div className="static">
+    <div className="static" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
       <div className="bg-white lg:h-[500px] md:h-[700px] w-full lg:w-[100%] flex flex-col lg:flex-row justify-center items-center rounded-xl">
         <div className="lg:w-[50%]">
           <img
