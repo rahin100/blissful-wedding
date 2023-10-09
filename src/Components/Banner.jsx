@@ -1,8 +1,8 @@
 const Banner = () => {
   return (
     <div className="relative" data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
       <div className="carousel w-full absolute top-[-85px] -z-10">
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
@@ -23,7 +23,7 @@ const Banner = () => {
             autoPlay
             muted
             loop
-            poster="poster-image.jpg"
+            poster="https://i.ibb.co/2g5238M/poster-image.jpg"
           >
             <source src="/src/assets/bg-5.mp4" type="video/mp4" />
           </video>

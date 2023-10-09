@@ -16,7 +16,9 @@ const Home = () => {
 
   return (
     <div className="app-container">
+      <div className="navbar-container">
       <Navbar></Navbar>
+      </div>
       <div className="banner-container">
         <Banner />
       </div>

@@ -11,7 +11,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import Gallery from "../Pages/Gallery";
 import Team from "../Pages/Team";
 
-const routes = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
@@ -21,7 +21,7 @@ const routes = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch('/public/Services.json')
-
+      
       },
       {
         path: "/testimonials",
@@ -49,15 +49,14 @@ const routes = createBrowserRouter([
       },
       {
         path: "/weddingEvents/:id",
-        element: (
+        element: 
           <PrivateRoute>
             <SingleService></SingleService>
-          </PrivateRoute>
-        ),
-        loader: () => fetch('/public/Services.json')
+          </PrivateRoute>,
+          loader: () => fetch('/public/Services.json')
       },
-    ],
+    ]
   },
 ]);
 
-export default routes;
+export default router;
