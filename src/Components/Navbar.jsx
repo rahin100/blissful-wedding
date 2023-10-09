@@ -4,6 +4,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  // const navigate = useNavigate()
 
   const handleSignOut = () => {
     logOut().then().catch();
@@ -11,36 +12,36 @@ const Navbar = () => {
 
   const navLink = (
     <>
-      <li className="text-[18px] font-semibold">
+      <li className="text-[18px] font-semibold text-white">
         <NavLink to={"/"} activeClassName="text-primary-600">
           Home
         </NavLink>
       </li>
-      <li className="text-[18px] font-semibold">
+      <li className="text-[18px] font-semibold text-white">
         <NavLink to={"/team"} activeClassName="text-primary-600">
           Team
         </NavLink>
       </li>
-      <li className="text-[18px] font-semibold">
+      <li className="text-[18px] font-semibold text-white">
         <NavLink to={"/testimonials"} activeClassName="text-primary-600">
           Testimonials
         </NavLink>
       </li>
       {user && (
         <>
-          <li className="text-[18px] font-semibold">
+          <li className="text-[18px] font-semibold text-white">
             <NavLink to={"/blog"} activeClassName="text-primary-600">
               Blog
             </NavLink>
           </li>
-          <li className="text-[18px] font-semibold">
+          <li className="text-[18px] font-semibold text-white">
             <NavLink to={"/gallery"} activeClassName="text-primary-600">
               Gallery
             </NavLink>
           </li>
         </>
       )}
-      <li className="text-[18px] font-semibold">
+      <li className="text-[18px] font-semibold text-white">
         <NavLink to={"/login"} activeClassName="text-primary-600">
           Login
         </NavLink>
@@ -50,7 +51,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-transparent shadow-lg p-4 z-20" data-aos="fade-down">
+      <div
+        className="navbar bg-transparent shadow-lg p-4 z-20"
+        data-aos="fade-down"
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -86,7 +90,53 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
         <div className="navbar-end">
-          <div className="dropdown flex justify-center items-center">
+          
+          {user?.email ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img
+                    src={user.photoURL}
+                    alt="User Avatar"
+                  />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-52"
+              >
+                <li>
+                  <a>{user.displayName}</a>
+                </li>
+                <li>
+                  <a onClick={handleSignOut}>Logout</a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link to="/login">
+              <div className="dropdown dropdown-end">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <img
+                      src="https://i.ibb.co/s5zPXPr/accoung-img.jpg"
+                      alt="User Avatar"
+                    />
+                  </div>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <a>Login</a>
+                  </li>
+                </ul>
+              </div>
+            </Link>
+          )}
+
+          {/* <div className="dropdown flex justify-center items-center">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 <img
@@ -95,6 +145,7 @@ const Navbar = () => {
                 />
               </div>
             </label>
+
             {user ? (
               <button onClick={handleSignOut} className="btn">
                 Log Out
@@ -104,7 +155,7 @@ const Navbar = () => {
                 <button className="btn">Login</button>
               </Link>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,14 +1,19 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 
+
+
+
 const Login = () => {
-  const [error, setError] = useState(""); 
+
+  
 
   const { signIn, googleLogin } = useContext(AuthContext);
-  // const location = useLocation();
+
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -16,20 +21,18 @@ const Login = () => {
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-
-    if (email && password) {
-      // Check if both email and password are provided
-      signIn(email, password)
-        .then((result) => {
-          console.log(result.user);
-          e.currentTarget.reset()
-          navigate("/");
-        })
-        .catch((err) => {
-          setError(err.message);
-        });
-    }
+  
+    signIn(email, password)
+    .then((result) => {
+      console.log(result.user);
+      e.currentTarget.reset();
+      navigate(location?.state ? location.state : '/');
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
   };
+  
 
   const handleSocialLogin = (media) => {
     media()
@@ -109,7 +112,7 @@ const Login = () => {
                       </button>
                     </p>
                   </div>
-                  <p>{error.message}</p>
+                  
                 </form>
               </div>
             </div>
