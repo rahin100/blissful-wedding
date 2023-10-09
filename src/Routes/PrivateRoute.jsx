@@ -15,11 +15,10 @@ const PrivateRoute = ({ children }) => {
   }
 
   if (!user?.email) {
-    return children;
+    return <Navigate state={location.pathname} to={'/login'}></Navigate>
   }
 
-  // Redirect the user to the login page with the previous location as state
-  return <Navigate state={location.pathname} to="/login"></Navigate>
+  return children
 };
 
 export default PrivateRoute;
