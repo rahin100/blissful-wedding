@@ -15,12 +15,12 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>A</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:?
 
-<i>Write your explanation here</i>
+<i>Correct answer is A. Where the code you declare variable and assign an empty array.Thats why it prints empty array.</i>
 
 </p>
 </details>
