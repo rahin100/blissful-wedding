@@ -12,7 +12,7 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
   const weddingEvents = useLoaderData();
-  console.log(weddingEvents);
+  // console.log(weddingEvents);
 
   return (
     <div className="app-container">

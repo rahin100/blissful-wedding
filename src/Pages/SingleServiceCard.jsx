@@ -1,9 +1,10 @@
-/* eslint-disable react/prop-types */
 
+
+// eslint-disable-next-line react/prop-types
 const SingleServiceCard = ({ weddingEvent }) => {
   const eventItemsArray = [];
   const eventItems = JSON.parse(localStorage.getItem("eventItem"));
-  console.log(eventItems);
+  // console.log(eventItems);
 
   if (!eventItems) {
     eventItemsArray.push(weddingEvent);
@@ -12,9 +13,8 @@ const SingleServiceCard = ({ weddingEvent }) => {
     eventItemsArray.push(...eventItems, weddingEvent);
     localStorage.setItem("eventItem", JSON.stringify(eventItemsArray));
   }
-  // eslint-disable-next-line no-unused-vars
-  const { id, name, image, price, short_description, button_text } =
-    weddingEvent;
+  // eslint-disable-next-line no-unused-vars, react/prop-types
+  const { id, name, image, price, short_description, button_text } = weddingEvent;
 
   return (
     <div>

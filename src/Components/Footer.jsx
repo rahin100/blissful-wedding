@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com/" className="flex items-center">
                 <img
-                  src="/src/assets/default-monochrome-white.svg"
+                  src="https://svgshare.com/i/yJ7.svg"
                   className="h-8 mr-3"
                   alt="FlowBite Logo"
                 />
