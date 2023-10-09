@@ -15,64 +15,37 @@ const Navbar = () => {
       <li className="text-[18px] font-semibold text-white">
         <NavLink
           to="/"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-primary-600" : ""
-          }
+          activeclassname="text-primary-600" // Add this class for the active link
         >
           Home
         </NavLink>
       </li>
       <li className="text-[18px] font-semibold text-white">
-        <NavLink
-          to="/team"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-primary-600" : ""
-          }
-        >
+        <NavLink to="/team" activeclassname="text-primary-600">
           Team
         </NavLink>
       </li>
       <li className="text-[18px] font-semibold text-white">
-        <NavLink
-          to="/testimonial"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-primary-600" : ""
-          }
-        >
+        <NavLink to="/testimonials" activeclassname="text-primary-600">
           Testimonial
         </NavLink>
       </li>
       {user && (
         <>
           <li className="text-[18px] font-semibold text-white">
-            <NavLink
-              to="/blog"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-primary-600" : ""
-              }
-            >
+            <NavLink to="/blog" activeclassname="text-primary-600">
               Blog
             </NavLink>
           </li>
           <li className="text-[18px] font-semibold text-white">
-            <NavLink
-              to="/gallery"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-primary-600" : ""
-              }
-            >
+            <NavLink to="/gallery" activeclassname="text-primary-600">
               Gallery
             </NavLink>
           </li>
         </>
       )}
       <li className="text-[18px] font-semibold text-white">
-        <NavLink
-          to="/login"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-primary-600" : ""
-          }
-        >
+        <NavLink to="/login" activeclassname="text-primary-600">
           Login
         </NavLink>
       </li>
@@ -132,10 +105,10 @@ const Navbar = () => {
                 className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-white rounded-box w-52"
               >
                 <li>
-                  <a>{user.displayName}</a>
+                  <button>{user.displayName}</button>
                 </li>
                 <li>
-                  <a onClick={handleSignOut}>Logout</a>
+                  <button onClick={handleSignOut}>Logout</button>
                 </li>
               </ul>
             </div>
@@ -155,33 +128,12 @@ const Navbar = () => {
                   className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a>Login</a>
+                    <button>Login</button>
                   </li>
                 </ul>
               </div>
             </Link>
           )}
-
-          {/* <div className="dropdown flex justify-center items-center">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img
-                  src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg"
-                  alt="User Avatar"
-                />
-              </div>
-            </label>
-
-            {user ? (
-              <button onClick={handleSignOut} className="btn">
-                Log Out
-              </button>
-            ) : (
-              <Link to={"/login"}>
-                <button className="btn">Login</button>
-              </Link>
-            )}
-          </div> */}
         </div>
       </div>
     </div>
