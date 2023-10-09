@@ -15,10 +15,10 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>A</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer:?
+#### Answer: A?
 
 <i>Correct answer is A. Where the code you declare variable and assign an empty array.Thats why it prints empty array.</i>
 
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C ?
 
-<i>Write your explanation here</i>
+<i>The result of this code is "12" because we know if we add integer value and string value than the result will be string value</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A?
 
-<i>Write your explanation here</i>
+<i>The result is A because in your code you print only food variable</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B?
 
-<i>Write your explanation here</i>
+<i>In your code, you're calling the sayHi function without passing any argument, but the sayHi function expects a name argument. This will result in an error because you're trying to concatenate a name that is undefined</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C ?
 
-<i>Write your explanation here</i>
+<i>In this code, you are iterating over the elements in the nums array using the forEach method. Inside the callback function, you have a conditional statement if (num) which checks if the current element num is truthy. Since 0 is considered falsy in JavaScript and all other numbers in the array are truthy, the callback function increments the count variable for each truthy value encountered. In this case, there are three truthy values 1, 2, and 3, so count becomes 3</i>
 
 </p>
 </details>
