@@ -8,6 +8,14 @@ const Blog = () => {
         <Navbar />
       </div>
 
+      <div className="mb-[100px]">
+        <img
+          className="h-[500px] object-cover w-full"
+          src="https://i.ibb.co/JRYPjDv/blogbg.jpg"
+          alt=""
+        />
+      </div>
+
       {/* 1st row  */}
       <div className="mt-[100px] mb-[80px]">
         <h2 className="text-5xl font-bold mb-[10px]">

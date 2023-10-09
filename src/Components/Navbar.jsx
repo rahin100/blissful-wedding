@@ -18,6 +18,9 @@ const Navbar = () => {
         <Link to={"/"}>Home</Link>
       </li>
       <li className="text-[18px] font-semibold text-white">
+        <Link to={"/team"}>Team</Link>
+      </li>
+      <li className="text-[18px] font-semibold text-white">
         <Link to={"/testimonials"}>Testimonials</Link>
       </li>
       <li className="text-[18px] font-semibold text-white">

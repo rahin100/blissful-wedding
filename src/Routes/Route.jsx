@@ -9,6 +9,7 @@ import Registration from "../Pages/Registration";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
 import Gallery from "../Pages/Gallery";
+import Team from "../Pages/Team";
 
 const routes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const routes = createBrowserRouter([
       {
         path: "/testimonials",
         element: <Testimonials></Testimonials>,
+      },
+      {
+        path: "/team",
+        element: <Team/>,
       },
       {
         path: "/blog",
