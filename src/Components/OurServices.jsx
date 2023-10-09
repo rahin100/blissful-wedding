@@ -11,7 +11,7 @@ const OurServices = () => {
     
   return (
     <div className="">
-        <h2 className="text-6xl font-bold mb-7">Our Services</h2>
+        <h2 className="text-4xl lg:text-6xl font-bold mb-7">Our Services</h2>
     </div>
   );
 };

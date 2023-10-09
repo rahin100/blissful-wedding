@@ -2,14 +2,17 @@ const Banner = () => {
   return (
     <div className="relative">
       <div className="carousel w-full absolute top-[-85px] -z-10">
+        {/* Slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <div className="w-full h-[100vh] absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute left-[10%] top-[50%] transform translate-y-[-50%] z-10">
-            <h1 className="text-white text-6xl font-extrabold mb-[10px]">AN</h1>
-            <h1 className="text-white text-7xl font-extrabold mb-[10px]">
+          <div className="absolute lg:left-[10%] md:left-[10%] left-[3%] top-[50%] transform translate-y-[-50%] z-10">
+            <h1 className="text-white text-2xl lg:text-6xl font-extrabold mb-3 lg:mb-10">
+              AN
+            </h1>
+            <h1 className="text-white text-3xl lg:text-7xl font-extrabold mb-3 lg:mb-10">
               UNFORGETTABLE
             </h1>
-            <h1 className="text-white text-8xl font-extrabold">
+            <h1 className="text-white text-5xl lg:text-8xl font-extrabold">
               EVENT BEGINS HERE.
             </h1>
           </div>
@@ -31,13 +34,17 @@ const Banner = () => {
             </a>
           </div>
         </div>
+
+        {/* Slide 2 */}
         <div id="slide2" className="carousel-item relative w-full">
           <div className="w-full h-[100vh] absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute left-[10%] top-[50%] transform translate-y-[-50%] z-10">
-            <h1 className="text-white text-7xl font-extrabold mb-[20px]">
+          <div className="absolute lg:left-[10%] md:left-[15%] left-[5%] top-[50%] transform translate-y-[-50%] z-10">
+            <h1 className="text-white text-4xl lg:text-7xl font-extrabold mb-2 lg:mb-4">
               Enjoy Your
             </h1>
-            <h1 className="text-white text-8xl font-extrabold">Celebration.</h1>
+            <h1 className="text-white text-5xl lg:text-8xl font-extrabold mb-2 lg:mb-4">
+              Celebration.
+            </h1>
           </div>
           <img
             src="https://i.ibb.co/7JLWH0G/bg-2.jpg"
@@ -53,13 +60,15 @@ const Banner = () => {
             </a>
           </div>
         </div>
+
+        {/* Slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
           <div className="w-full h-[100vh] absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute left-[10%] top-[50%] transform translate-y-[-50%] z-10">
-            <h1 className="text-white text-6xl font-extrabold mb-[20px]">
+          <div className="absolute lg:left-[10%] md:left-[15%] left-[5%] top-[50%] transform translate-y-[-50%] z-10">
+            <h1 className="text-white text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-4">
               Your Bridal Cortege
             </h1>
-            <h1 className="text-white text-7xl font-extrabold">
+            <h1 className="text-white text-5xl lg:text-7xl font-extrabold mb-2 lg:mb-4">
               Where Dreams Meet Elegance.
             </h1>
           </div>
@@ -77,13 +86,15 @@ const Banner = () => {
             </a>
           </div>
         </div>
+
+        {/* Slide 4 */}
         <div id="slide4" className="carousel-item relative w-full">
           <div className="w-full h-[100vh] absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute left-[10%] top-[50%] transform translate-y-[-50%] z-10">
-            <h1 className="text-white text-6xl font-extrabold mb-[20px]">
+          <div className="absolute lg:left-[10%] md:left-[15%] left-[5%] top-[50%] transform translate-y-[-50%] z-10">
+            <h1 className="text-white text-3xl lg:text-6xl font-extrabold mb-2 lg:mb-4">
               Elevate Your Love Story
             </h1>
-            <h1 className="text-white text-7xl font-extrabold">
+            <h1 className="text-white text-4xl lg:text-7xl font-extrabold mb-2 lg:mb-4">
               Our Wedding Venues Make Magic Happen.
             </h1>
           </div>

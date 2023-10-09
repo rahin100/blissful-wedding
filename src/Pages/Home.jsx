@@ -27,7 +27,7 @@ const Home = () => {
 
       <div className="ourServices-container">
         <OurServices></OurServices>
-        <div className="grid grid-cols-3 gap-10 shadow-xl">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-5 shadow-xl">
           {weddingEvents?.map((weddingEvent) => (
             <ServicesCard
               key={weddingEvent.id}

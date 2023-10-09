@@ -45,9 +45,9 @@ const Login = () => {
       <div className="bg-black">
         <Navbar />
       </div>
-      <div className="flex justify-center items-center w-full">
-        <div className="w-1/2">
-          <div className="hero min-h-screen bg-base-200">
+      <div className="lg:flex justify-center items-center w-full">
+        <div className="lg:w-1/2">
+          <div className="hero min-h-screen lg:bg-base-200">
             <div className="hero-content flex-col">
               <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Login now!</h1>
@@ -115,7 +115,7 @@ const Login = () => {
           </div>
         </div>
         {/* Add humans */}
-        <section className="w-[50%]">
+        <section className="lg:w-[50%]">
           <div>
             <img
               className="w-full h-[70vh]"

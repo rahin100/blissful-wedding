@@ -18,7 +18,7 @@ const Blog = () => {
 
       {/* 1st row  */}
       <div className="mt-[100px] mb-[80px]">
-        <h2 className="text-5xl font-bold mb-[10px]">
+        <h2 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-[10px]">
           The most common mistakes when managing personal finances
         </h2>
         <div className="card bg-base-100 shadow-xl">
@@ -48,7 +48,7 @@ const Blog = () => {
 
       {/* second row  */}
       <div className="mt-[100px] mb-[80px]">
-        <h2 className="text-5xl font-bold mb-[10px]">
+        <h2 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-[10px]">
           Methods of the recruitment
         </h2>
         <div className="card bg-base-100 shadow-xl">
@@ -76,7 +76,7 @@ const Blog = () => {
 
       {/* 3rd row  */}
       <div className="mt-[100px] mb-[80px]">
-        <h2 className="text-5xl font-bold mb-[10px]">
+        <h2 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-[10px]">
           Overalls with logo as a method of advertising
         </h2>
         <div className="card bg-base-100 shadow-xl">

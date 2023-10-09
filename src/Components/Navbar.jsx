@@ -1,39 +1,69 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
-  // eslint-disable-next-line no-unused-vars
-  const handleSignOut = (e) => {
+  const handleSignOut = () => {
     logOut()
-     .then()
-     .catch();
+      .then()
+      .catch();
   };
 
   const navLink = (
     <>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/"}>Home</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/"}
+          activeClassName="text-primary-600" 
+        >
+          Home
+        </NavLink>
       </li>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/team"}>Team</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/team"}
+          activeClassName="text-primary-600"
+        >
+          Team
+        </NavLink>
       </li>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/testimonials"}>Testimonials</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/testimonials"}
+          activeClassName="text-primary-600"
+        >
+          Testimonials
+        </NavLink>
       </li>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/blog"}>Blog</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/blog"}
+          activeClassName="text-primary-600"
+        >
+          Blog
+        </NavLink>
       </li>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/gallery"}>Gallery</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/gallery"}
+          activeClassName="text-primary-600"
+        >
+          Gallery
+        </NavLink>
       </li>
-      <li className="text-[18px] font-semibold text-white">
-        <Link to={"/login"}>Login</Link>
+      <li className="text-[18px] font-semibold">
+        <NavLink
+          to={"/login"}
+          activeClassName="text-primary-600"
+        >
+          Login
+        </NavLink>
       </li>
     </>
   );
+
   return (
     <div>
       <div className="navbar bg-transparent shadow-lg p-4 z-20">
@@ -75,7 +105,7 @@ const Navbar = () => {
           <div className="dropdown flex justify-center items-center">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg" />
+                <img src=" https://i.ibb.co/s5zPXPr/accoung-img.jpg" alt="User Avatar" />
               </div>
             </label>
             {user ? (

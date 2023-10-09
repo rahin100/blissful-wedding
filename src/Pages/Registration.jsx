@@ -65,9 +65,9 @@ const Registration = () => {
         <div className="bg-black">
           <Navbar />
         </div>
-        <div className="flex justify-center items-center w-[100%]">
-          <div className="w-[50%]">
-            <div className="hero min-h-screen bg-base-200">
+        <div className="lg:flex justify-center items-center w-[100%]">
+          <div className="lg:w-[50%]">
+            <div className="hero min-h-screen lg:bg-base-200">
               <div className="hero-content flex-col">
                 <div className="text-center lg:text-left">
                   <h1 className="text-5xl font-bold">Register Here!</h1>
@@ -159,7 +159,7 @@ const Registration = () => {
             </div>
           </div>
           {/* add humans */}
-          <section className="w-[50%]">
+          <section className="lg:w-[50%]">
             <div>
               <img
                 className="w-[100%] h-[70vh]"

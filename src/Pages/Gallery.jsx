@@ -9,20 +9,20 @@ const Gallery = () => {
       </div>
       <div className="mb-[100px]">
         <img
-          className="h-[500px] object-cover w-full"
+          className="h-[500px] object-cover lg:w-full"
           src="https://i.ibb.co/4FcG5qY/gallerybg.jpg"
           alt=""
         />
       </div>
 
-      <p className="text-5xl w-[900px] mx-auto mb-[70px]">
+      <p className="lg:text-5xl text-2xl  lg:w-[900px] md:w-[500px] w-[250px]  mx-auto mb-[70px]">
         The choices surrounding your wedding day are endless and sometimes
         overwhelming. 
       </p>
-      <div className="grid grid-cols-3 mb-[100px]">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-100vw  mb-[100px]">
         <img src="https://i.ibb.co/9HwBpB1/g1.jpg" alt="" />
         <img
-          className="h-[366px]"
+          className="lg:h-[366px]"
           src="https://i.ibb.co/HxB0yv4/g2.jpg"
           alt=""
         />

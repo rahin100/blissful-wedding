@@ -1,5 +1,5 @@
-import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Team = () => {
   return (
@@ -17,11 +17,11 @@ const Team = () => {
       </div>
 
       
-      <h2 className="text-6xl font-bold mb-7">Our Team</h2>
-      <div className="mb-[100px] grid grid-cols-3 gap-5">
+      <h2 className="text-3xl lg:text-6xl font-bold mb-7 text-center">Our Team</h2>
+      <div className="mb-[100px] grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
       
         {/* 1st row  */}
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex flex-col w-full lg:w-96 bg-white bg-clip-border text-gray-700 shadow-md">
           <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <img
               src="https://i.ibb.co/Pc683Qj/team1.jpg"
@@ -29,10 +29,10 @@ const Team = () => {
             />
           </div>
           <div className="p-6 text-center">
-            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h4 className="mb-2 block font-sans text-xl lg:text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                John Cassius
             </h4>
-            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base lg:text-lg font-medium leading-relaxed text-transparent antialiased">
               CEO / Co-Founder
             </p>
             <p>
@@ -42,7 +42,7 @@ const Team = () => {
           </div>
           <div>
           <button
-                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] font-semibold"
+                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] lg:text-lg font-semibold"
                 type="button"
               >
                 Read More
@@ -52,7 +52,7 @@ const Team = () => {
 
 
         {/* 2nd row  */}
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex flex-col w-full lg:w-96 bg-white bg-clip-border text-gray-700 shadow-md">
           <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <img
               src="https://i.ibb.co/0CP9ddm/team2.jpg"
@@ -60,19 +60,19 @@ const Team = () => {
             />
           </div>
           <div className="p-6 text-center">
-            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h4 className="mb-2 block font-sans text-xl lg:text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               Natalie Paisley
             </h4>
-            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base lg:text-lg font-medium leading-relaxed text-transparent antialiased">
             SPECIALIST
             </p>
             <p>
-            Natalie Paisley is a wedding expert who does her job with pure elegance to make your wedding day unforgettable
+            Natalie Paisley is a wedding expert who does her job with pure elegance to make your wedding day unforgettable.
             </p>
           </div>
           <div>
           <button
-                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] font-semibold"
+                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] lg:text-lg font-semibold"
                 type="button"
               >
                 Read More
@@ -81,7 +81,7 @@ const Team = () => {
         </div>
 
         {/* 3rd row  */}
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex flex-col w-full lg:w-96 bg-white bg-clip-border text-gray-700 shadow-md">
           <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <img
               src="https://i.ibb.co/fxpvQPy/team3.jpg"
@@ -89,10 +89,10 @@ const Team = () => {
             />
           </div>
           <div className="p-6 text-center">
-            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h4 className="mb-2 block font-sans text-xl lg:text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             Maud Howard
             </h4>
-            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base lg:text-lg font-medium leading-relaxed text-transparent antialiased">
             ORGANIZER
             </p>
             <p>
@@ -101,7 +101,7 @@ const Team = () => {
           </div>
           <div>
           <button
-                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] font-semibold"
+                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] lg:text-lg font-semibold"
                 type="button"
               >
                 Read More
@@ -110,7 +110,7 @@ const Team = () => {
         </div>
 
         {/* 4th row  */}
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex flex-col w-full lg:w-96 bg-white bg-clip-border text-gray-700 shadow-md">
           <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <img
               src="https://i.ibb.co/K0yG7Jq/team4.jpg"
@@ -118,10 +118,10 @@ const Team = () => {
             />
           </div>
           <div className="p-6 text-center">
-            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h4 className="mb-2 block font-sans text-xl lg:text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             Jimmy Loren
             </h4>
-            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-transparent antialiased">
+            <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base lg:text-lg font-medium leading-relaxed text-transparent antialiased">
             PHOTOGRAPHER
             </p>
             <p>
@@ -130,7 +130,7 @@ const Team = () => {
           </div>
           <div>
           <button
-                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] font-semibold"
+                className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 block w-full text-white text-[16px] lg:text-lg font-semibold"
                 type="button"
               >
                 Read More
