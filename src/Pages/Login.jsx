@@ -123,7 +123,7 @@ const Login = () => {
           <div>
             <img
               className="w-full h-[70vh]"
-              src="/src/assets/login.png"
+              src="https://i.ibb.co/3dP8y2F/login.png"
               alt=""
             />
           </div>

@@ -166,7 +166,7 @@ const Registration = () => {
             <div>
               <img
                 className="w-[100%] h-[70vh]"
-                src="/src/assets/registration.png"
+                src="https://i.ibb.co/3pgXq8F/registration.png"
                 alt=""
               />
             </div>

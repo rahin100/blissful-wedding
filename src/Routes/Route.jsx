@@ -20,7 +20,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('/public/Services.json')
+        loader: async () =>{
+          const res = await fetch("/services.json")
+          const data = await res.json()
+          return data;
+        }
       
       },
       {
@@ -53,7 +57,11 @@ const router = createBrowserRouter([
           <PrivateRoute>
             <SingleService></SingleService>
           </PrivateRoute>,
-          loader: () => fetch('/public/Services.json')
+          loader: async () =>{
+            const res = await fetch("/services.json")
+            const data = await res.json()
+            return data;
+          }
       },
     ]
   },
