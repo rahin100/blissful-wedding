@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: A?
 
-<i>Correct answer is A. Where the code you declare variable and assign an empty array.Thats why it prints empty array.</i>
+<i>Correct answer is A. Where the code you declare variable and assign an empty object.Thats why it prints an empty object.</i>
 
 </p>
 </details>
